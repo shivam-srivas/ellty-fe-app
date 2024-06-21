@@ -1,0 +1,178 @@
+/* App and component container styling */
+.App {
+  display: flex;
+  justify-content: space-around; /* Distribute components evenly */
+  padding: 10px; /* Padding around the components */
+}
+
+.component {
+  flex: 1; /* Each component takes equal space */
+  margin: 0 2px; /* Margin between components */
+}
+
+/* Button styling */
+.done-button {
+  width: 340px;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #FFCE22; /* Yellow background color */
+  color: black;
+  font-size: 14px;
+  font-weight: normal;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.done-button:hover {
+  background-color: #FFD84D; /* Lighter shade of yellow on hover */
+  color: rgb(53, 53, 53);
+}
+
+/* Checkbox container styling */
+.checkbox-container {
+  box-sizing: border-box;
+  position: relative;
+  width: 65px;
+  height: 425px;
+  border: 1px dashed #9747FF;
+  border-radius: 5px;
+}
+
+/* Checkbox styling */
+.checkbox {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.checkbox.default {
+  left: 20px;
+  top: 20px;
+  border: 1px solid #CDCDCD;
+  opacity: 0.6;
+}
+
+.checkbox.variant2 {
+  left: 20px;
+  top: 65px;
+  border: 1px solid #E3E3E3;
+}
+
+.checkbox.variant3 {
+  left: 20px;
+  top: 110px;
+  border: 3px solid #2469F6;
+  opacity: 0.1;
+}
+
+.checkbox.variant4 {
+  left: 20px;
+  top: 155px;
+  background: #5087F8;
+}
+
+.checkbox.variant5 {
+  left: 20px;
+  top: 200px;
+  background: #2469F6;
+}
+
+.checkbox.variant6 {
+  left: 20px;
+  top: 245px;
+  background: #5087F8;
+}
+
+.checkbox.variant7 {
+  left: 20px;
+  top: 290px;
+  background: #2469F6;
+  opacity: 0.1;
+  border: 3px solid #2469F6;
+}
+
+.checkbox.variant8 {
+  left: 20px;
+  top: 335px;
+  border: 1px solid #BDBDBD;
+}
+
+.checkbox.variant9 {
+  left: 20px;
+  top: 380px;
+  border: 1px solid #CDCDCD;
+}
+
+.checkbox-icon {
+  position: relative;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.checkbox.ticked .checkbox-icon {
+  visibility: visible;
+}
+
+.checkbox.ticked .checkbox-icon::after {
+  content: '';
+  position: sticky;
+  width: 15.64px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+  left: 3.68px;
+}
+
+/* Dropdown styling */
+.dropdown-container {
+  width: 370px;
+  margin: 20px auto;
+}
+
+.dropdown {
+  border: 1px solid #BDBDBD;
+  border-radius: 6px;
+  padding: 8px 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #BDBDBD;
+  border-radius: 6px;
+  padding: 8px 15px;
+  z-index: 10;
+}
+
+/* Subcategory styling */
+.subcategory {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.subcategory-label {
+  margin-right: 10px;
+}
